@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RegistActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#EE0000">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:id="@+id/toolbar_title" />
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="注册个人信息"
+        android:layout_below="@+id/toolbar"
+        android:gravity="center"
+        android:textColor="#2A36B1"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="用户名："
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入用户名"
+        android:layout_toRightOf="@id/tv_username"
+        android:layout_below="@id/tv_title"
+        android:textSize="25sp"
+        android:background="@null"
+        android:layout_alignBaseline="@id/tv_username"
+        />
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="密码："
+        android:layout_below="@id/tv_username"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入密码"
+        android:layout_toRightOf="@id/tv_password"
+        android:layout_below="@id/tv_username"
+        android:textSize="25sp"
+        android:background="@null"
+        android:layout_alignBaseline="@id/tv_password"
+        />
+
+    <TextView
+        android:id="@+id/tv_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="性别："
+        android:layout_below="@id/tv_password"
+        android:layout_marginTop="20dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:textSize="25sp"
+        android:layout_toRightOf="@id/tv_sex"
+        android:layout_alignTop="@id/tv_sex"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:checked="false"
+            android:text="男"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:checked="false"
+            android:text="女"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="手机号："
+        android:layout_below="@+id/tv_sex"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_tel"
+        android:layout_below="@id/tv_sex"
+        android:textSize="25sp"
+        android:hint="请输入手机号"
+        android:background="@null"
+        android:layout_alignBaseline="@id/tv_tel"
+        />
+
+    <TextView
+        android:id="@+id/tv_birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="生日："
+        android:layout_below="@+id/tv_tel"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_birthday"
+        android:layout_below="@id/tv_tel"
+        android:hint="请输入出生年月日"
+        android:textSize="25sp"
+        android:background="@null"
+        android:layout_alignBaseline="@id/tv_birthday"
+        />
+
+    <Button
+        android:id="@+id/btn_regist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#757575"
+        android:layout_below="@id/tv_birthday"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="90dp"
+        android:text="提交"/>
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#757575"
+        android:layout_toRightOf="@id/btn_regist"
+        android:layout_marginLeft="22dp"
+        android:layout_alignTop="@id/btn_regist"
+        android:text="重置"/>
+
+</RelativeLayout>

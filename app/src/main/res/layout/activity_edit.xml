@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RegistActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#EE0000">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:id="@+id/toolbar_title" />
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/etv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="编辑个人信息"
+        android:layout_below="@+id/toolbar"
+        android:gravity="center"
+        android:textColor="#2A36B1"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/etv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="用户名："
+        android:layout_below="@+id/etv_title"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/eusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/etv_username"
+        android:layout_below="@id/etv_title"
+        android:textSize="25sp"
+        android:background="@null"
+        android:layout_alignBaseline="@id/etv_username"
+        />
+
+    <TextView
+        android:id="@+id/etv_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="性别："
+        android:layout_below="@id/etv_username"
+        android:layout_marginTop="20dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/eradio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:textSize="25sp"
+        android:layout_toRightOf="@id/etv_sex"
+        android:layout_alignTop="@id/etv_sex"
+        >
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:checked="false"
+            android:text="男"/>
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:checked="false"
+            android:text="女"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/etv_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="手机号："
+        android:layout_below="@+id/etv_sex"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/etel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/etv_tel"
+        android:layout_below="@id/etv_sex"
+        android:textSize="25sp"
+        android:background="@null"
+        android:layout_alignBaseline="@id/etv_tel"
+        />
+
+    <TextView
+        android:id="@+id/etv_birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="生日："
+        android:layout_below="@+id/etv_tel"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/ebirthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/etv_birthday"
+        android:layout_below="@id/etv_tel"
+        android:textSize="25sp"
+        android:background="@null"
+        android:layout_alignBaseline="@id/etv_birthday"
+        />
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#757575"
+        android:layout_below="@id/etv_birthday"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="90dp"
+        android:text="提交"/>
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#757575"
+        android:layout_toRightOf="@id/btn_edit"
+        android:layout_marginLeft="22dp"
+        android:layout_alignTop="@id/btn_edit"
+        android:text="重置"/>
+
+</RelativeLayout>

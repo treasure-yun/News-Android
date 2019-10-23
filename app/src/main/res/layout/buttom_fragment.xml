@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/chat_button"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/chart_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/TabRadioButton"
+            android:drawableTop="@drawable/chat_button_news"
+            android:text="首页"/>
+
+        <RadioButton
+            android:id="@+id/chart_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/TabRadioButton"
+            android:drawableTop="@drawable/chat_button_video"
+            android:text="视频"/>
+
+        <RadioButton
+            android:id="@+id/chart_talk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/TabRadioButton"
+            android:drawableTop="@drawable/chat_button_talk"
+            android:text="讲讲"/>
+
+        <RadioButton
+            android:id="@+id/chart_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/TabRadioButton"
+            android:drawableTop="@drawable/chat_button_my"
+            android:text="我的"/>
+        <!--图片在文字上面-->
+
+    </RadioGroup>
+
+</LinearLayout>
